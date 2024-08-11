@@ -11,7 +11,7 @@ import {
 import { Footer, Navbar } from "@/components";
 export default function Home() {
   return (
-    <div>
+    <div className="bg-primary-black overflow-hidden">
       <Navbar />
       <Hero />
       <About />
