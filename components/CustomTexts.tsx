@@ -5,8 +5,8 @@ export const TypingText = ({
   title,
   textStyle,
 }: {
-  title: any;
-  textStyle: any;
+  title?: any;
+  textStyle?: any;
 }) => (
   <motion.p
     variants={textContainer}
@@ -24,8 +24,8 @@ export const TitleText = ({
   title,
   textStyle,
 }: {
-  title: any;
-  textStyle: any;
+  title?: any;
+  textStyle?: any;
 }) => (
   <motion.h2
     variants={textVariant2}
