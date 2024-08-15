@@ -105,3 +105,45 @@
   background: #65c4fa;
   filter: blur(150px);
 }
+
+.enter::after {
+  content: "";
+
+  animation: text 2s infinite linear alternate-reverse;
+}
+
+@keyframes text {
+  0% {
+    content: "";
+  }
+  10% {
+    content: "M";
+  }
+  20% {
+    content: "Me";
+  }
+  30% {
+    content: "Met";
+  }
+  40% {
+    content: "Meta";
+  }
+  50% {
+    content: "Metav";
+  }
+  60% {
+    content: "Metave";
+  }
+  70% {
+    content: "Metaver";
+  }
+  80% {
+    content: "Metavers";
+  }
+  90% {
+    content: "Metaverse";
+  }
+  100% {
+    content: "Metaverse.";
+  }
+}
