@@ -3,14 +3,38 @@ import { motion } from "framer-motion";
 import { slideIn, staggerContainer, textVariant } from "@/utils/motion";
 import styles from "@/styles";
 const Hero = () => (
-  <section className={`sm:py-16 xs:py-8 py-12 sm:pl-16 pl-6`}>
+  <section className={`sm:py-16 xs:py-8 py-12 sm:pl-16 pl-6 `}>
     <motion.div
       variants={staggerContainer()}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.5 }}
-      className={`2xl:max-w-[1280px] w-full mx-auto flex flex-col`}
+      className={`2xl:max-w-[1280px] w-full mx-auto flex flex-col relative`}
     >
+      <motion.div
+        className="absolute right-20 top-0 hidden md:flex flex-col gap-5"
+        variants={{
+          hidden: {
+            x: 200,
+            opacity: 0,
+          },
+          show: {
+            x: 0,
+            opacity: 1,
+          },
+        }}
+        initial="hidden"
+        animate="show"
+        transition={{
+          duration: 0.5,
+          delay: 1,
+        }}
+      >
+        <img src="/facebook.svg" alt="" />
+        <img src="/instagram.svg" alt="" />
+        <img src="/linkedin.svg" alt="" />
+        <img src="/twitter.svg" alt="" />
+      </motion.div>
       <div className="flex justify-center items-center flex-col relative z-10">
         <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
           Metaverse
