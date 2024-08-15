@@ -1,22 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
-import {
-  fadeIn,
-  planetVariants,
-  slideIn,
-  staggerContainer,
-  textVariant,
-} from "@/utils/motion";
-import {
-  TypingText,
-  ExploreCard,
-  TitleText,
-  StartSteps,
-  NewFeatures,
-} from "@/components";
-import { newFeatures, startingFeatures } from "@/constants";
+import { fadeIn, planetVariants, staggerContainer } from "@/utils/motion";
+import { TypingText, TitleText, NewFeatures } from "@/components";
+import { newFeatures } from "@/constants";
 import styles from "@/styles";
-import { useState } from "react";
 
 const WhatsNew = () => (
   <section className={`${styles.paddings} relative z-10`}>
